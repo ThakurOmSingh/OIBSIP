@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/LENOVO/Desktop/my%20Skills/Oasis%20Infobyte%20projects/calculator.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body> 
+
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator using HTML, CSS and JavaScript</title>
+    <script>
+function clearvalues() {
+  document.getElementById("result").value = " ";
+}
+function calculatevalues(){
+    var calculatedresult = document.getElementById("result").value;
+    document.getElementById("result").value= eval(calculatedresult);
+}
+</script>
+    <style>
+        body{
+            background-color:rgb(103,80,99);
+            max-height:600px; 
+        }
+  .calculator {
+ border-collapse: collapse;
+  background-color: black;
+  height : 350px;
+  width : 250px;
+  max-width: 360px;
+	
+      text-align: center;
+  }
+  
+  #result{
+  background-color: black;
+      color: cyan;
+  height:45px;
+  padding-top : 22px;
+  text-align : right;
+  font-size : 35px;
+
+  }
+        .button{
+            background-color: darkorange;
+            border: 0 ;
+            width: 145px;
+            border-collapse: collapse;
+        }
+        .operator{
+            background-color:lightgray;
+        }
+        .opt{
+            font-size:15px;
+            width:100px;
+            height: 25px;
+            background-color:lightgray;
+            border:0;
+        }
+        .btn{
+            background-color: darkorange;
+            border: 0;
+            width : 100px;
+            height:25px;
+        }
+        #clear{
+            background-color: red;
+            border: 0;
+            width: 100px;
+            height: 25px;
+        }
+        .clear{
+            background-color:red;
+        }
+        #clear:hover{
+            background-color: lightgray;
+        }
+        .btn:hover {
+    background-color: lightgray;
+        }
+        .opt:hover{
+            background-color:bisque;
+        }
+        .calculator:hover{
+            box-shadow: 0px 0px 23px 18px  black;
+        }
+        #heading{
+            text-align: center;
+            font-size: 35px;
+        }
+        #div3{
+    color: white;
+    background-color: black;
+    max-width: inherit;
+    height:275px;
+    width: auto;
+    text-align: center;
+}
+    </style>
+
+
+ 
+
+    <h1 id="heading"><u>Simple Calculator</u></h1>
+ 
+
+  
+    
+    
+  
+  
+    
+    
+    
+  
+  
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  <table class="calculator" align="center" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td colspan="3"> <input class="display-box" type="text" id="result" disabled=""> </td></tr><tr><td class="operator"> <input class="opt" type="button" value="+" onclick="result.value +=&#39;+&#39;"> </td><td class="operator"> <input class="opt" type="button" value="-" onclick="result.value +=&#39;-&#39;"> </td><td class="operator"> <input class="opt" type="button" value="*" onclick="result.value +=&#39;*&#39;"> </td></tr><tr><td class="operator"> <input class="opt" type="button" value="/" onclick="result.value +=&#39;/&#39;"> </td><td class="operator"> <input class="opt" type="button" value="%" onclick="result.value +=&#39;%&#39;"> </td>
+    <td class="clear"> <input type="button" value="C" onclick="clearvalues()" id="clear"> </td></tr><tr><td class="button"> <input class="btn" type="button" value="7" onclick="result.value +=&#39;7&#39;"> </td><td class="button"> <input class="btn" type="button" value="8" onclick="result.value +=&#39;8&#39;"> </td><td class="button"> <input class="btn" type="button" value="9" onclick="result.value +=&#39;9&#39;"> </td></tr><tr><td class="button"> <input class="btn" type="button" value="4" onclick="result.value +=&#39;4&#39;"> </td><td class="button"> <input class="btn" type="button" value="5" onclick="result.value +=&#39;5&#39;"> </td><td class="button"> <input class="btn" type="button" value="6" onclick="result.value +=&#39;6&#39;"> </td></tr><tr><td class="button"> <input class="btn" type="button" value="1" onclick="result.value +=&#39;1&#39;"> </td><td class="button"> <input class="btn" type="button" value="2" onclick="result.value +=&#39;2&#39;"> </td><td class="button"> <input class="btn" type="button" value="3" onclick="result.value +=&#39;3&#39;"> </td></tr><tr><td class="operator"> <input class="opt" type="button" value="." onclick="result.value +=&#39;.&#39;"> </td><td class="button"> <input class="btn" type="button" value="0" onclick="result.value +=&#39;0&#39;"> </td><td class="operator"> <input class="opt" type="button" value="=" onclick="calculatevalues()" id="btn"> </td></tr>
+</tbody></table>
+    <br><br><br>
+        <footer id="div3">
+            <br>
+            <h3>Calculator Made By</h3>
+            <address>OM SINGH JADON<br><br>
+                          Contact Me At:-<br><br>
+                         
+                                       Email       : singhjadon.2002@gmail.com<a href="mailto:singhjadon.2002@gmail.com"> (Send Mail)</a>
+                                                    <br>
+                           Linkedin      :<a href="https://www.linkedin.com/in/om-singh-6352b420a" target="_blank"> OM SINGH JADON</a>
+                           <br>
+                                 Github      :<a href="https://github.com/ThakurOmSingh" target="_blank"> Thakur Om Singh</a>   
+                            
+            </address>
+                </footer>
+ 
+
+ 
+</body></html>
