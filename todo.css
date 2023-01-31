@@ -1,0 +1,97 @@
+body{
+  background-color: #374151;
+    	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+h1,h2{
+    font-size: 45px;
+    color:pink;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+}
+#todo-input{
+    border-radius: 10px ;
+    background-color: burlywood;
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+#todo-form {
+	display: flex;
+}
+#todo-input::placeholder{
+   color:maroon
+}
+#todo-submit{
+    font-size: 20px;
+    color: #EC4899;
+    background-color: #374151;
+    border: 0;
+    cursor: pointer;
+}
+
+#tasks .task {
+	display: flex;
+	
+	background-color: balck;
+    color:antiquewhite;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    
+}
+
+.task .content {
+	display: flex;
+    flex: 1 1 0%;
+}
+
+.task .content .text {
+	background-color: burlywood;
+	font-size: 1.125rem;
+	width: 100%;
+	transition: 0.4s;
+    padding: 1rem;
+	border-radius: 1rem;
+    color:maroon;
+    
+}
+
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+}
+
+
+
+
+
+.task .actions .edit {
+	background-color: #374151;
+    color : #EC4899;
+    border: 0;
+
+}
+
+.task .actions .delete {
+	
+    background-color: #374151;
+    color : #EC4899;
+    border: 0;
+}
